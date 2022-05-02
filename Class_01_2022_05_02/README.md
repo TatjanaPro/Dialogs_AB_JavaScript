@@ -19,6 +19,7 @@ utt
 Visi simboli ir standartizēti un apkopoti **ascii**	tabulā (128 simboli)
 
 ![ascii tabula](http://www.ecowin.org/aulas/resources/tables/asciitable.jpg)
+Bilde ņemta no https://www.ecowin.org/ascii.htm
 
 Simboli ierakstīti **bitu** kombinācijā un tiek ierakstīti **elementārā atmiņas šūnā.**
 Bitam ir divi stāvokli - 0 vai 1 (bināra sistēma).

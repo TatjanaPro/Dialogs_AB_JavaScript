@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <title>Practice_CV</title>
-  <style></style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.  */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
 
   <body>
+    <div class="row">
+      <div class="column" style="background-color: rgb(211, 206, 206)">
     <img src="../images/ikona.jpg" style="width: 10%" />
     <h2>Tatjana Proņina</h2>
 
@@ -32,8 +55,9 @@
       />
       +371 25353727
     </p>
-    <hr />
+    </div>
 
+    <div class="column">
     <h2>Skills</h2>
     <p>_________________</p>
 
@@ -44,5 +68,6 @@
     <h6>May 2022 -Current</h6>
 
     <h2>Education</h2>
+  </div>
   </body>
 </html>

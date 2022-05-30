@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Forms</h2>
+
+    <form action="http://www.foo.com" method="POST">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      /><br />
+
+      Password:<br />
+      <input type="password" id="myInput" /><br /><br />
+      <input type="checkbox" onclick="myFunction()" />Show Password <br /><br />
+      <label for="date">Date:</label><br />
+      <input type="text" id="date" name="date" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+</html>

@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+  </head>
   <body>
-    <h2>My First JavaScript</h2>
+    <h2>Demo JavaScript in Head</h2>
 
-    <button
-      type="button"
-      onclick="document.getElementById('demo').innerHTML = Date()"
-    >
-      Click me to display Date and Time.
-    </button>
+    <p id="demo">A Paragraph.</p>
 
-    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <h2>Demo JavaScript in Body</h2>
+
+    <p id="demo2">A Paragraph.</p>
+
+    <button type="button2" onclick="myFunction()">Try it</button>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo2").innerHTML = "Paragraph changed.";
+      }
+    </script>
+
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+      document.getElementById("demo3").innerHTML = "My First JavaScript";
+    </script>
+
+    <h2>Demo External JavaScript</h2>
+
+    <p id="demo4">A Paragraph.</p>
+
+    <button type="button4" onclick="myFunction()">Try it</button>
+
+    <p>This example links to "myScript.js".</p>
+    <p>(myFunction is stored in "myScript.js")</p>
+
+    <script src="JS.js"></script>
   </body>
 </html>

@@ -42,6 +42,85 @@
 
     <script src="JS.js"></script> 
 
+    <h2>JavaScript String Properties</h2>
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo5"></p>
+
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo5").innerHTML = text.length;
+</script>
+
+
+<h2>JavaScript Strings</h2>
+
+<p id="demo6"></p>
+
+<script>
+// x is a string
+let x = "John";
+
+// y is an object
+let y = new String("John");
+
+document.getElementById("demo6").innerHTML =
+typeof x + "<br>" + typeof y;
+</script>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Numbers can be written with or without decimals:</p>
+
+<p id="demo7"></p>
+
+<script>
+let x7 = 3.14;
+let y7 = 3;
+document.getElementById("demo7").innerHTML = x7 + "<br>" + y7;
+</script>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Floating point arithmetic is not always 100% accurate:</p>
+<p id="demo8"></p>
+
+<p>But it helps to multiply and divide:</p>
+
+<p id="demo9"></p>
+
+<script>
+let x8 = 0.2 + 0.1;
+document.getElementById("demo8").innerHTML = "0.2 + 0.1 = " + x8;
+let y8 = (0.2*10 + 0.1*10) / 10;
+document.getElementById("demo9").innerHTML = "0.2 + 0.1 = " + y8;
+</script>
+
+
+<h2>JavaScript Numbers</h2>
+
+<p>JavaScript will try to convert strings to numbers when dividing:</p>
+
+<p id="demo10"></p>
+
+<script>
+let x10 = "100";
+let y10 = "10";
+let z10 = x10 / y10;   
+document.getElementById("demo10").innerHTML = z10;
+</script>
+
+<p>JavaScript will NOT convert strings to numbers when adding:</p>
+
+<p id="demo11"></p>
+
+<script>
+let x11 = "100";
+let y11 = "10";
+let z11 = x11 + y11;   
+document.getElementById("demo11").innerHTML = z11;
+</script>
     
   </body>
 </html>

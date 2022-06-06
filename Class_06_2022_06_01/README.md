@@ -39,5 +39,10 @@ let x = 100; // x is a number
 
 let y = "100"; // y is a string
 
+String.fromCharCode() - cipars parversas simbola no ASCII tabulas
+
+"A".charCodeAt(0) --> 65 (ASCII A simbola numurs)
+Number("0x"+(32).toString(16)); -->32
+
 </body>
 </html>

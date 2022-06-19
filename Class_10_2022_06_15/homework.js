@@ -15,3 +15,12 @@ document.getElementById("procenti_2").innerHTML = profitSecond.toFixed(2);
 document.getElementById("procenti_3").innerHTML = profitThird.toFixed(2);
 document.getElementById("procenti_4").innerHTML = profitFourth.toFixed(2);
 document.getElementById("procenti_5").innerHTML = profitFifth.toFixed(2);
+
+// let profit = [];
+// const calcProfit = (profit, rate, i) => {
+//   profit.push(money * profit[i] * rate);
+// };
+// rates.foreach((rate, i) => {
+//   calcProfit(profit, rate, i);
+// });
+// console.log("profit", profit);

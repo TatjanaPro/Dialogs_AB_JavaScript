@@ -17,3 +17,4 @@ nested arrays in objects
 
 Property attributes
 Prototype properties - objekti manto savas ipasibas no prototipiem
+end

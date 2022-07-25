@@ -11,4 +11,4 @@ Priekš kam mes izmantojam Getters un Setters?
 
 Izskatijam piemeru ar piekluves ipasibu uzdošanu ar Object.defineProperty().
 
-Iepazisanas ar konstruktoriem.
+Iepazisanas ar konstruktoriem. Izskatijam piemerus. Izskatijam ka pievienot metodes

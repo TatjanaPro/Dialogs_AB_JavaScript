@@ -46,3 +46,13 @@ Number("0x"+(32).toString(16)); -->32
 
 </body>
 </html>
+
+LOGISKAS OPERACIJAS (OPERATORI)
+
+|| (or) true or falsy
+
+&& (and) -> Console: Boolean(1); Rezultats: True
+
+![Diagramma](https://github.com/TatjanaPro/Dialogs_AB_JavaScript/blob/main/Images/logic_operators.jpg?raw=true)
+
+Bitu bidisana

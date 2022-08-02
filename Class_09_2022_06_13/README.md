@@ -25,3 +25,5 @@ ka dabut masiva pedejo elementu -> arrayName.length - 1
 Array.forEach() funkcija
 
 arrayName.push(""); - jauna elementa pievienosana masivam
+
+![Piemers Masivs Masivā](https://github.com/TatjanaPro/Dialogs_AB_JavaScript/blob/main/Images/array_in_array.jpg?raw=true)

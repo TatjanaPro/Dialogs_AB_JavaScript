@@ -28,3 +28,6 @@ console.log(factorial(3));
     Anonimas funkcijas - bez nosaukuma
 
     square(5); - funkcija ar argumentu
+
+![Funkcijas](https://github.com/TatjanaPro/Dialogs_AB_JavaScript/blob/main/Images/funct.jpg?raw=true)
+![Funkcijas](https://github.com/TatjanaPro/Dialogs_AB_JavaScript/blob/main/Images/funk1.jpg?raw=true)

@@ -16,3 +16,5 @@ Tatjana Pronina (TP):
 3. Pēc ASCII tabulas HEX skaitļi T 84/16 = 5 un otrais cipars no 84 ir 4, tad T 54 un P 50
 
 Pēc teoretiskas daļas līdz nodarbības beigas instalējam VS code un savienojam ar savu Github repasetoriju
+
+end of 2nd class

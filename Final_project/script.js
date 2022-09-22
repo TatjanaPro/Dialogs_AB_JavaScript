@@ -1,3 +1,10 @@
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .navbar');
+
+
+
+
+//carousel starts here
 const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller")
 
@@ -331,7 +338,9 @@ function Place (name, adres, id, contacts, workingTime, ticketPrice, tags) {
     this.ticketPrice = ticketPrice; 
     this.tags = tags;
 }
-      
+     
+// carousel end here
+
 const place1 = new Place("Tērvetes dabas parks", "Tērvetes sils, Tērvetes pag., Tērvete", 0001, "tel.: +371 28309 394", "P - SV: 9:00 - 19:00", "Ģimenes biļete 15 EUR", "arSuņiem, ģimenei, arBērniem, daba, ūdenskratuve");
 
 const place2 = new Place("Rakši Zoo", "Rakši, Drabešu pagasts",0002, "tel.: +371 20009 098", "P - SV: 10:00 - 17:00", "5 - 7 EUR","atrakcijas, dzīvnieki, ģimenei, arBērniem, daba");

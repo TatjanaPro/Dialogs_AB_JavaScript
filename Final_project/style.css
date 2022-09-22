@@ -1,26 +1,32 @@
 *{
-    font-family:fantasy;
-    margin:0; padding: 0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    font-family: system-ui;
-    height: 100%;
-    
-  }
-  .header{
-    position:sticky;
-    top:0; left:0; right:0;
-    z-index: 1000;
-   
+  font-family:fantasy;
+  margin:0; padding:0;
+  box-sizing:border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 
-  }
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+
+}
+
+.header{
+  position: sticky;
+  top: 0; left: 0;; right: 0;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+  padding: 2rem 9%;
+
+}
   
   .visuallyhidden {
     position: absolute;
@@ -57,6 +63,59 @@
     transition: filter .3s ease;
   }
   
+  .home{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    
+}
+
+    .image{
+        flex:1 1 42rem;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .btn{
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 1rem 3rem;
+      font-size: 2rem;
+      color: white;
+      background: black;
+      border: border;
+      cursor: pointer;
+      font-weight: bolder;
+      border-radius: .5rem;
+
+    }
+
+    .content{
+      flex:1 1 42rem;
+    }
+
+    h3{
+      font-size:6rem;
+      font-weight:bolder;
+    }
+
+    p{
+      font-size: 2rem;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+
+@media (max-width:1200px){
+    .header{
+        padding:2rem;
+    }
+    section{
+        padding:3rem 2 rem
+    }
+}
+
   @media screen and (max-width: 640px) {
     .card-carousel {
       margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)

@@ -81,6 +81,7 @@ function compare(utterancesArray, answersArray, string) {
   return reply;
 }
 
+//creates a thread of messages for user and chat bot
 function addChatEntry(input, product) {
   const messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");

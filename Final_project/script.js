@@ -1,9 +1,3 @@
-let menu = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .navbar');
-
-
-
-
 //carousel starts here
 const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller")
@@ -92,7 +86,6 @@ class DraggingEvent {
     this.event(distanceInit)
   }
 }
-
 
 class CardCarousel extends DraggingEvent {
   constructor(container, controller = undefined) {
@@ -327,6 +320,11 @@ class CardCarousel extends DraggingEvent {
 
 const carousel = new CardCarousel(cardsContainer)
 
+//carousel ends here
+
+//let menu = document.querySelector('#menu-btn');
+//let navbar = document.querySelector('.header .navbar');
+
 //objekts ar metodi
 
 function Place (name, adres, id, contacts, workingTime, ticketPrice, tags) {
@@ -339,25 +337,28 @@ function Place (name, adres, id, contacts, workingTime, ticketPrice, tags) {
     this.tags = tags;
 }
      
-// carousel end here
-
 const place1 = new Place("Tērvetes dabas parks", "Tērvetes sils, Tērvetes pag., Tērvete", 0001, "tel.: +371 28309 394", "P - SV: 9:00 - 19:00", "Ģimenes biļete 15 EUR", "arSuņiem, ģimenei, arBērniem, daba, ūdenskratuve");
-
 const place2 = new Place("Rakši Zoo", "Rakši, Drabešu pagasts",0002, "tel.: +371 20009 098", "P - SV: 10:00 - 17:00", "5 - 7 EUR","atrakcijas, dzīvnieki, ģimenei, arBērniem, daba");
-
 const place3 = new Place("Izklaides parks Avārijas Brigāde - ABpark", "ABpark, Lēdmanes pagasts", 0003, "tel.: +371 27336 600", "S - SV: 10:00 - 19:00", "22 EUR", "atrakcijas, ūdens, ģimenei, arBērniem, daba",);
 
-  // atspoguļo
- // document.getElementById("object_place").innerHTML = "Nosaukums: " + place1.name + " " + "Adrese: " + place1.adres + " " + "Kontakti: " + place1.contacts + " " +"Darba laiks: " + place1.workingTime + " " +"Cenas: " + place1.ticketPrice + " " +"Tagi: " + place1.tags;
-  
-  // document.getElementById("object_place2").innerHTML = "Nosaukums: " + place2.name + " " + "Adrese: " + place2.adres + " " + "Kontakti: " + place2.contacts + " " +"Darba laiks: " + place2.workingTime + " " +"Cenas: " + place2.ticketPrice + " " +"Tagi: " + place2.tags;
- 
-  // document.getElementById("object_place3").innerHTML = "Nosaukums: " + place3.name + " " + "Adrese: " + place3.adres + " " + "Kontakti: " + place3.contacts + " " +"Darba laiks: " + place3.workingTime + " " +"Cenas: " + place3.ticketPrice + " " +"Tagi: " + place3.tags;
+// document.getElementById("object_place").innerHTML = "Nosaukums: " + place1.name + " " + "Adrese: " + place1.adres + " " + "Kontakti: " + place1.contacts + " " +"Darba laiks: " + place1.workingTime + " " +"Cenas: " + place1.ticketPrice + " " +"Tagi: " + place1.tags;
+// document.getElementById("object_place2").innerHTML = "Nosaukums: " + place2.name + " " + "Adrese: " + place2.adres + " " + "Kontakti: " + place2.contacts + " " +"Darba laiks: " + place2.workingTime + " " +"Cenas: " + place2.ticketPrice + " " +"Tagi: " + place2.tags;
+// document.getElementById("object_place3").innerHTML = "Nosaukums: " + place3.name + " " + "Adrese: " + place3.adres + " " + "Kontakti: " + place3.contacts + " " +"Darba laiks: " + place3.workingTime + " " +"Cenas: " + place3.ticketPrice + " " +"Tagi: " + place3.tags;
 
-//poga
-// var button = document.getElementById("button1");
-// var myarray = [this.place1, this.place2, this.place3];
+//btn
+var button = document.getElementById("btn");
+var myarray = [place1,place2,place3];
 
-// button.onclick = function() {
- //    alert(myarray[Math.floor(Math.random() * myarray.length)]);
-// };
+
+button.onclick = function() {
+ alert(objectPlace(myarray[Math.floor(Math.random() * myarray.length)]));
+};
+
+function objectPlace(place) {
+    return "Nosaukums: " + place.name + " " + "Adrese: " + place.adres + " " + "Kontakti: " + place.contacts + " " +"Darba laiks: " + place.workingTime + " " + "Cenas: " + place.ticketPrice + " " + "Tagi: " + place.tags;
+}
+
+//relative URL
+function buttonClicked() {
+  window.location.href = "faq.html";
+  }

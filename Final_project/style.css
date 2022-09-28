@@ -1,3 +1,4 @@
+/*  (*) affect every HTML element */
 *{
   font-family:fantasy;
   margin:0; padding:0;
@@ -36,6 +37,7 @@ html {
     
   }
   
+  /* will affect all  h1 */
   h1 {
     color: white;
     text-align: center;

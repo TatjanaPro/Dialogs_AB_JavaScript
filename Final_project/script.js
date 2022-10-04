@@ -1,4 +1,4 @@
-//carousel starts here
+//carousel starts here https://codepen.io/WillyW/pen/wZebow
 const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller")
 
@@ -320,12 +320,12 @@ class CardCarousel extends DraggingEvent {
 
 const carousel = new CardCarousel(cardsContainer)
 
-//carousel ends here
+// carousel ends here
 
-//let menu = document.querySelector('#menu-btn');
-//let navbar = document.querySelector('.header .navbar');
+// let menu = document.querySelector('#menu-btn');
+// let navbar = document.querySelector('.header .navbar');
 
-//objekts ar metodi
+// objekts ar metodi
 
 function Place (name, adres, id, contacts, workingTime, ticketPrice, tags) {
     this.name = name; 
@@ -345,7 +345,7 @@ const place3 = new Place("Izklaides parks Avārijas Brigāde - ABpark", "ABpark,
 // document.getElementById("object_place2").innerHTML = "Nosaukums: " + place2.name + " " + "Adrese: " + place2.adres + " " + "Kontakti: " + place2.contacts + " " +"Darba laiks: " + place2.workingTime + " " +"Cenas: " + place2.ticketPrice + " " +"Tagi: " + place2.tags;
 // document.getElementById("object_place3").innerHTML = "Nosaukums: " + place3.name + " " + "Adrese: " + place3.adres + " " + "Kontakti: " + place3.contacts + " " +"Darba laiks: " + place3.workingTime + " " +"Cenas: " + place3.ticketPrice + " " +"Tagi: " + place3.tags;
 
-//btn
+// btn
 var button = document.getElementById("btn");
 var myarray = [place1,place2,place3];
 
@@ -358,7 +358,8 @@ function objectPlace(place) {
     return "Nosaukums: " + place.name + " " + "Adrese: " + place.adres + " " + "Kontakti: " + place.contacts + " " +"Darba laiks: " + place.workingTime + " " + "Cenas: " + place.ticketPrice + " " + "Tagi: " + place.tags;
 }
 
-//relative URL
+// relative URL
 function buttonClicked() {
-  window.location.href = "faq.html";
+  document.location.href = "faq.html";
+
   }
